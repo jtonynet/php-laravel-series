@@ -92,7 +92,12 @@ Contrate artistas para projetos comerciais ou mais elaborados e aprenda a ser en
 <!-- 
 COMANDOS:
 
-composer create-project laravel/laravel application_download
+```
+> composer create-project laravel/laravel application_download
+# Movi o conteudo para a raiz do projeto
+
+> php artisan serve
+```
 -->
 
 <!-- 
