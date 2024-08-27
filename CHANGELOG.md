@@ -81,6 +81,8 @@ quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser aborda
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+
+[0.1.0]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.8...v0.1.0
 [0.0.8]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.5...v0.0.6

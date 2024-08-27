@@ -191,7 +191,7 @@ COMANDOS:
 npm install
 npm install laravel-mix --save-dev
 npm run mix
-nstall bootstrap
+npm install bootstrap
 npm run mix
 #rodando o mix, ver tag 0.0.2
 ```
