@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.6] - 2024-08-27
 ### Added
 
-- Rota de edicao e demais melhorias nos componentes
+- Exibindo erros de validacoes de request customizada
 
 ---
 
