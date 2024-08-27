@@ -31,7 +31,7 @@ class SeriesController extends Controller
         $series = Series::create($request->all());
         $seasons = [];
         for ($i = 1; $i <= $request->seasonsQty; $i++) {
-            $season[] = [
+            $seasons[] = [
                 'series_id' => $series->id,
                 'number' => $i
             ];

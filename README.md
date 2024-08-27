@@ -228,4 +228,8 @@ debug bar:
 composer require barryvdh/laravel-debugbar --dev
 ```
 como visto em: https://github.com/barryvdh/laravel-debugbar
+
+```
+php artisan make:controller SeasonsController
+```
 -->
