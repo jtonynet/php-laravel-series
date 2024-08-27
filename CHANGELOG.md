@@ -14,6 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.8] - 2024-08-27
+### Added
+
+- inserindo temporadas e numero de episodios (nao me parece correto pois as temporadas podem variar a 
+quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser abordado em outros modulos)
+- Adicionado [debug bar](https://github.com/barryvdh/laravel-debugbar)
+
+---
+
 ## [0.0.7] - 2024-08-27
 ### Added
 
@@ -72,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+[0.0.8]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.4...v0.0.5
