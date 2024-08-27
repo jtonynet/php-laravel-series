@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.0.1] - 2024-08-26
+### Added
+
+- Trabalhando com blades e view de index e create
+- trabalhando com blade component de layout
+
+---
+
 ## [0.0.0] - 2024-08-26
 ### Added
 
