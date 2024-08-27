@@ -10,7 +10,7 @@ class SeriesController extends Controller
 {
     public function index (Request $request)
     {
-        $series = Serie::query()->orderBy('nome')->get();
+        $series = Serie::all();
         $mensagemSucesso = $request->session()->get('mensagem.sucesso');
 
         return view('series.index')
@@ -37,7 +37,6 @@ class SeriesController extends Controller
     }
 
     public function edit(Serie $series) {
-        dd($series->seasons);
         return view('series.edit')->with('serie', $series);
     }
 
