@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('seasons', function (Blueprint $table) {
             $table->id();
-            $table->unsignedTinyInteger('numero');
+            $table->unsignedTinyInteger('number');
 
-            $table->foreignId('series_id')->consrained(); //mesma coisa que as 2 proximas linhas
+            $table->foreignId('series_id')->consrained()->onDelete('cascade'); //mesma coisa que as 2 proximas linhas
             // $table->unsignedBigInteger('series_id');
             // $table->foreign('series_id')->references('id')->on('series');
 

@@ -32,8 +32,9 @@
 __[Laravel CRUD Series](#php-laravel)__<br/>
   1. ⤴️ [Index](#index)
   2. 📗 [Sobre](#about)
-  3. 💻 [Rodandp o Projeto](#run)
-  4. 🤖 [Use de AI](#ia)
+  3. 💻 [Rodando o Projeto](#run)
+  4. 🔢 [Versões](#versions)
+  5. 🤖 [Use de AI](#ia)
  
 <br/>
 
@@ -62,6 +63,20 @@ Projeto para atualização de conhecimentos em novas versões do framework Larav
 [⤴️ de volta ao Index](#index)
 
 ---
+
+<a id="versions"></a>
+### 🔢 Versões
+
+As tags de versões estão sendo criadas manualmente a medida que o curso avança. Cada modulo é desenvolvido em uma branch a parte (Branch Based, [feature branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)) quando finalizadas é gerada tag e mergeadas em main.
+
+Para obter mais informações, consulte o [Histórico de Versões](./CHANGELOG.md).
+
+<br/>
+
+[⤴️ de volta ao Index](#index)
+
+---
+
 
 <a id="ia"></a>
 ### 🤖 Uso de AI
@@ -207,4 +222,10 @@ Executando migrations apos edicao dos arquivos de migrate:
 ```
 php artisan migrate
 ```
+
+debug bar:
+```
+composer require barryvdh/laravel-debugbar --dev
+```
+como visto em: https://github.com/barryvdh/laravel-debugbar
 -->
