@@ -196,4 +196,10 @@ Criando Request
 ```
 php artisan make:request SeriesFormRequest
 ```
+
+Criando Models com migration
+```
+php artisan make:model Season -m
+php artisan make:model Episode -m
+```
 -->
