@@ -191,4 +191,9 @@ Criando Model
 ```
 php artisan make:model Serie
 ```
+
+Criando Request
+```
+php artisan make:request SeriesFormRequest
+```
 -->
