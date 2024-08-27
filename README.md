@@ -73,7 +73,7 @@ __Os seguintes prompts foram usados para criação no  [Bing IA:](https://www.bi
 
 
 <details>
-  <summary><b>Elepfante Cartoon</b></summary>
+  <summary><b>Elefante Cartoon</b></summary>
 "um elefante azul, simbolo da linguagem de programacao PHP, sentado em uma poltrona e segurando um controle remoto em frente a uma TV. Estilo cartoon, fundo branco para facil remocao, cores chapadas"<b>(sic)</b>
 </details>
 
@@ -97,6 +97,7 @@ COMANDOS:
 # Movi o conteudo para a raiz do projeto
 
 > php artisan serve
+> php artisan make:controller SeriesController --resource
 ```
 -->
 
