@@ -90,28 +90,6 @@ Contrate artistas para projetos comerciais ou mais elaborados e aprenda a ser en
 [⤴️ de volta ao Index](#index)
 
 <!-- 
-COMANDOS:
-
-```
-> composer create-project laravel/laravel application_download
-# Movi o conteudo para a raiz do projeto
-
-> php artisan serve
-> php artisan make:controller SeriesController --resource
-```
-
-```
-npm install
-npm install laravel-mix --save-dev
-npm run mix
-nstall bootstrap
-npm run mix
-#rodando o mix, ver tag 0.0.2
-```
-
--->
-
-<!-- 
 README GERADO PELO COMPOSER:
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
@@ -183,3 +161,34 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 -->
 
+<!-- 
+COMANDOS:
+
+```
+> composer create-project laravel/laravel application_download
+# Movi o conteudo para a raiz do projeto
+
+> php artisan serve
+> php artisan make:controller SeriesController --resource
+```
+
+```
+npm install
+npm install laravel-mix --save-dev
+npm run mix
+nstall bootstrap
+npm run mix
+#rodando o mix, ver tag 0.0.2
+```
+
+Criando migrations:
+```
+php artisan make:migration create_series_table
+php artisan migrate
+```
+
+Criando Model
+```
+php artisan make:model Serie
+```
+-->
