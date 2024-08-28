@@ -1,14 +1,17 @@
 <x-layout title="Series" :mensagem-sucesso="$mensagemSucesso">
+    @auth
     <a href="{{ route('series.create') }}" class="btn btn-dark mb-2">Adicionar</a>
+    @endauth
 
     <ul class="list-group">
         @foreach ($series as $currentSeries)
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                <a href="{{ route('seasons.index', $currentSeries->id) }}">
-                    {{ $currentSeries->nome }}
-                </a>
+                @auth<a href="{{ route('seasons.index', $currentSeries->id) }}">@endauth
+                        {{ $currentSeries->nome }}
+                @auth</a>@endauth
 
-                <spen class="d-flex">
+                @auth
+                <span class="d-flex">
                     <form action="{{ route('series.edit', $currentSeries->id) }}" method="get" class="ms-2">
                         <button class="btn btn-primary btn-sm">
                             E
@@ -22,7 +25,8 @@
                             X
                         </button>
                     </form>
-            </spen>
+                </span>
+                @endauth
             </li>
         @endforeach
     </ul>
