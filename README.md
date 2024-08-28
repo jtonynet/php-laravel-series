@@ -98,6 +98,7 @@ A IA também ajudou em algumas pesquisas neste estudo, sendo utilizada como uma 
 
 Contrate artistas para projetos comerciais ou mais elaborados e aprenda a ser engenhoso!
 
+
 <br/>
 
 [⤴️ de volta ao Index](#index)
@@ -107,7 +108,7 @@ Contrate artistas para projetos comerciais ou mais elaborados e aprenda a ser en
 <a id="conclusion"></a>
 ### 🏁 Conclusão
 
-Durante este estudo, meu objetivo foi me atualizar nas novas versões do framework Laravel, com foco nas versões 10 e 11, onde identifiquei algumas incompatibilidades e em alguns dos recursos mais recentes do PHP.
+Durante este estudo, meu objetivo foi me atualizar nas novas versões do framework Laravel, com foco nas versões 10 e 11, onde identifiquei algumas incompatibilidades.
 
 Acredito que há espaço para melhorias futuras, as quais pretendo implementar em breve ou incentivar outros estudos:
 
@@ -116,6 +117,7 @@ Acredito que há espaço para melhorias futuras, as quais pretendo implementar e
 - Utilização do [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze) para gerenciar a autenticação de usuários, substituindo o middleware customizado utilizado nesta aplicação, o qual foi construído com propósito didático.
 
 Essas melhorias não apenas otimizariam o desempenho, mas também alinhariam o projeto com as melhores práticas recomendadas pelo Laravel.
+
 
 <br/>
 
