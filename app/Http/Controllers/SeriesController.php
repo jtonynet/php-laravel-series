@@ -2,15 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\Autenticador;
 use App\Models\Series;
 use Illuminate\Http\Request;
 use App\Http\Requests\SeriesFormRequest;
 use App\Repositories\SeriesRepository;
 
-class SeriesController extends Controller
+/*
+TODO: Broken change entre o laravel 10 e 11 a controller default
+nao possui mais o metodo 'middleware' portando  estou  usando  a 
+outra versao como BaseController. Verificar por outras  solucoes
+https://laracasts.com/discuss/channels/laravel/middleware-in-laravel-11-inside-the-controller
+*/
+use Illuminate\Routing\Controller as BaseController;
+
+
+class SeriesController extends BaseController
 {
 
-    public function __construct(private SeriesRepository $repository) {}
+    public function __construct(private SeriesRepository $repository)
+    {
+        $this->middleware(Autenticador::class)->except('index');
+    }
 
     public function index(Request $request)
     {
