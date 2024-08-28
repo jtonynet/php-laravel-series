@@ -232,4 +232,11 @@ como visto em: https://github.com/barryvdh/laravel-debugbar
 ```
 php artisan make:controller SeasonsController
 ```
+
+
+Criando um serviceProvider de SeriesRepository para informar qual valor default o service container deve assumir quando essa interface for injetada e nao uma classe concreta Inversao de Dependencia
+```
+php artisan make::provider SeriesRepositoryProvider
+```
+verificar bootstrap\providers.php
 -->

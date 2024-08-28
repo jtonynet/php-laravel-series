@@ -14,6 +14,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - 2024-08-27
+### Added
+
+- Separamos o código que lida com banco de dados  em repository removendo da controller
+- lidando com injeção de dependência no Laravel usando o service container
+
+---
+
+## [0.1.0] - 2024-08-27
+### Added
+
+- Trabalhando com transactions para garantir consistencia entre series/temporadas/episodios
+
+---
+
 ## [0.0.8] - 2024-08-27
 ### Added
 
