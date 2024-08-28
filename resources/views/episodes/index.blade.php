@@ -1,4 +1,7 @@
-<x-layout title="Episodios da {{ $episodes[0]->season->number }}º temporada de '{{ $episodes[0]->season->series->nome }}'">
+<x-layout 
+    title="Episodios da {{ $episodes[0]->season->number }}º temporada de '{{ $episodes[0]->season->series->nome }}'"
+    :mensagem-sucesso="$mensagemSucesso"
+>
     <form method="post">
         @csrf
         <ul class="list-group">

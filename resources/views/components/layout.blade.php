@@ -18,6 +18,12 @@
             </div>
         @endif
 
+        @isset($mensagemSucesso)
+        <div class="alert alert-success">
+            {{ $mensagemSucesso }}
+        </div>
+        @endisset
+
         {{ $slot }}
         </div>
     </body>
