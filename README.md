@@ -239,4 +239,14 @@ Criando um serviceProvider de SeriesRepository para informar qual valor default 
 php artisan make::provider SeriesRepositoryProvider
 ```
 verificar bootstrap\providers.php
+
+Criando nova migration
+ ```
+ php artisan make:migration --table=episodes
+
+ ┌ What should the migration be named? ─────────────────────────┐
+ │ episodes_add_watched_episodes                                │
+ └──────────────────────────────────────────────────────────────┘
+
+ ```
 -->
