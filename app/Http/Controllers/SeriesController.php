@@ -35,7 +35,7 @@ class SeriesController extends Controller
             ->with('mensagem.sucesso', "Serie '{$series->nome}' adicionada com sucesso");
     }
 
-    public function destroy(Series $series, Request $request)
+    public function destroy(Series $series)
     {
         $series->delete();
 

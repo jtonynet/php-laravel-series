@@ -6,12 +6,18 @@ use App\Models\Season;
 use App\Models\Episode;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class EpisodesController
 {
-    public function index(Season $season)
+    public function index(Season $season, Request $request)
     {
-        return view('episodes.index', ['episodes' => $season->episodes]);
+        $mensagemSucesso = $request->session()->get('mensagem.sucesso');
+
+        return view('episodes.index', [
+            'episodes' => $season->episodes,
+            'mensagemSucesso' => $mensagemSucesso
+        ]);
     }
 
     public function update(FormRequest $request, Season $season)
@@ -25,6 +31,7 @@ class EpisodesController
         });
 
 
-        return to_route('episodes.index', $season->id);
+        return to_route('episodes.index', $season->id)
+            ->with('mensagem.sucesso', "Visualizacao de episodios registrada");
     }
 }
