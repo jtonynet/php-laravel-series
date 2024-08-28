@@ -6,9 +6,6 @@ use App\Models\Series;
 use Illuminate\Http\Request;
 use App\Http\Requests\SeriesFormRequest;
 use App\Repositories\SeriesRepository;
-use Illuminate\Auth\AuthenticationException;
-use Illuminate\Support\Facades\Auth;
-use PhpParser\Node\Expr\Throw_;
 
 class SeriesController extends Controller
 {
@@ -17,11 +14,6 @@ class SeriesController extends Controller
 
     public function index(Request $request)
     {
-        // Code Snipet
-        // if (!Auth::check()) {
-        //     throw new AuthenticationException();
-        // }
-
         $series = Series::all();
         $mensagemSucesso = $request->session()->get('mensagem.sucesso');
 
