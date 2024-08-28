@@ -14,6 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.5] - 2024-08-28
+### Added
+
+- Termino do curso 3 da formacao atualizada de Laravel
+
+---
+
 ## [0.1.4] - 2024-08-28
 ### Added
 
@@ -118,6 +125,7 @@ quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser aborda
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+[0.1.5]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.1...v0.1.2
