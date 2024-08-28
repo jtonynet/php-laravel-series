@@ -249,4 +249,12 @@ Criando nova migration
  └──────────────────────────────────────────────────────────────┘
 
  ```
+
+
+ Criando middleware de autenticacao customizado (provavelmente pratica ruim, seguindo ela por finalidade didatica)
+ ```
+ php artisan make:middleware Autenticador
+ ```
+
+ [Adicionar validacao assim q possivel](https://laravel.com/docs/9.x/validation#rule-confirmed)
 -->

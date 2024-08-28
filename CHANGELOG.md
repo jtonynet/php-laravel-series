@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.3] - 2024-08-27
+### Added
+
+- Estrategia de login SIMPLES
+- Barra de navegacao SIMPLES
+
+---
+
 ## [0.1.2] - 2024-08-27
 ### Added
 
@@ -103,6 +111,7 @@ quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser aborda
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+[0.1.3]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/jtonynet/php-laravel-series/compare/v0.0.8...v0.1.0
