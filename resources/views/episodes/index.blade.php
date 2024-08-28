@@ -1,4 +1,4 @@
-<x-layout title="Episodios">
+<x-layout title="Episodios da {{ $episodes[0]->season->number }}º temporada de '{{ $episodes[0]->season->series->nome }}'">
     <form method="post">
         @csrf
         <ul class="list-group">
