@@ -45,17 +45,42 @@ class SeriesController extends BaseController
     public function store(SeriesFormRequest $request)
     {
         $series = $this->repository->add($request);
-        $email = new SeriesCreated(
-            $series->nome,
-            $series->id,
-            $request->seasonsQty,
-            $request->episodesPerSeason,
-        );
 
-        # Mail::to($request->user())->send($email);
-        // Enviando email para todos os users da base
-        foreach (User::all() as $currentUser) {
-            Mail::to($currentUser)->send($email);
+        foreach (User::all() as $index => $user) {
+            $email = new SeriesCreated(
+                $series->nome,
+                $series->id,
+                $request->seasonsQty,
+                $request->episodesPerSeason,
+            );
+
+            /*
+            TODO:
+
+            Nosso cliente smtp so aceite enviar 5  emails  a cada segundo
+            Uma solucao possivel para contornar essa caracteristica seria
+            enfileirar os emails e rodar o worker com  2  retentativas  a 
+            cada 10 segundos:
+
+            Mail::to($user)->queue($email);
+
+            worker levantado com:
+            php artisan queue:work --tries=2 --delay=10
+
+            Mas dependeriamos do worker e ainda poderia ocorrer o deadlock.
+            Outra   alternativa   com   `later`  se   encontra  abaixo  com 
+            processamento agendado:
+            */
+
+            $when = now()->addSeconds($index * 2);
+            Mail::to($user)->later($when, $email);
+
+            /*
+            Honestamente, nao gostei de nenhuma das duas alternativas dadas 
+            pelo instrutor. Pesquisarei mais. A alternativa acima nao reduz 
+            a necessidade de delay e retentativas, um hibrido de ambas pode
+            ser coerente. Pesquisar mais sobre cenarios!
+            */
         }
 
         return to_route('series.index')

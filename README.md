@@ -209,6 +209,26 @@ Enviando emails com Laravel. Pare o server e rode:
 php artisan make:mail SeriesCreated
 ```
 
+Abrir terminal iterativa dentro da aplicacao
+```
+php artisan tinker
+DB::select('select * from jobs;');
+```
+
+Saindo do terminal do tinker, subo  o processo do worker para fazer os disparos de email do queue:
+```
+php artisan queue:work
+```
+
+Iniciando worker com duas retentativas com 10 sec de delay entre cada uma delas
+```
+php artisan queue:work --tries=2 --delay=10
+```
+
+[Importante parte da DOC sobre queue](https://laravel.com/docs/9.x/queues#queue-workers-and-deployment)
+
+
+
  - [Adicionar validacao assim q possivel](https://laravel.com/docs/9.x/validation#rule-confirmed)
  - [Laravel Breeze Lesson](https://cursos.alura.com.br/course/laravel-transacoes-service-container-autenticacao/task/105915)
 -->
