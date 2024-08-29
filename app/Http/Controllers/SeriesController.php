@@ -6,6 +6,8 @@ use App\Http\Middleware\Autenticador;
 use App\Models\Series;
 use Illuminate\Http\Request;
 use App\Http\Requests\SeriesFormRequest;
+use App\Mail\SeriesCreated;
+use App\Models\User;
 use App\Repositories\SeriesRepository;
 
 /*
@@ -15,7 +17,7 @@ outra versao como BaseController. Verificar por outras  solucoes
 https://laracasts.com/discuss/channels/laravel/middleware-in-laravel-11-inside-the-controller
 */
 use Illuminate\Routing\Controller as BaseController;
-
+use Illuminate\Support\Facades\Mail;
 
 class SeriesController extends BaseController
 {
@@ -43,6 +45,18 @@ class SeriesController extends BaseController
     public function store(SeriesFormRequest $request)
     {
         $series = $this->repository->add($request);
+        $email = new SeriesCreated(
+            $series->nome,
+            $series->id,
+            $request->seasonsQty,
+            $request->episodesPerSeason,
+        );
+
+        # Mail::to($request->user())->send($email);
+        // Enviando email para todos os users da base
+        foreach (User::all() as $currentUser) {
+            Mail::to($currentUser)->send($email);
+        }
 
         return to_route('series.index')
             ->with('mensagem.sucesso', "Serie '{$series->nome}' adicionada com sucesso");
