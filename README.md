@@ -225,6 +225,21 @@ Iniciando worker com duas retentativas com 10 sec de delay entre cada uma delas
 php artisan queue:work --tries=2 --delay=10
 ```
 
+Criando listner para fazer o papel adequado dos workers (listner `faz algo quando o evento acontece`)
+```
+php artisan make:listener EmailUsersAboutSeriesCreated
+```
+
+Cria na estrutura do laravel o evento
+```
+php artisan make:event SeriesCreated
+```
+
+Cria Listener vinculado ao evento
+```
+php artisan make:listener LogSeriesCreated -e SeriesCreated
+```
+
 [Importante parte da DOC sobre queue](https://laravel.com/docs/9.x/queues#queue-workers-and-deployment)
 
 
