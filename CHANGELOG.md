@@ -14,7 +14,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.2.0] - 2024-08-28
+## [0.2.1] - 2024-09-01
+### Added
+
+- Logs e eventos assincronos
+
+---
+
+---
+
+## [0.2.0] - 2024-08-29
 ### Added
 
 - Enviando emails para multiplos usuarios
@@ -133,6 +142,7 @@ quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser aborda
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+[0.2.0]: https://github.com/jtonynet/php-laravel-series/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.5...v0.2.0
 [0.1.5]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.3...v0.1.4
