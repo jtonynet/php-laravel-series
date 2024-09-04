@@ -8,10 +8,14 @@
             <li class="list-group-item d-flex justify-content-between align-items-center">
 
                 <div class="d-flex align-items-center">
+
+                    @if (!is_null($currentSeries->cover))
                     <img src="{{ asset('storage/' . $currentSeries->cover)}}" 
                         alt="Capa da Serie"
                         style="height:150px" 
                         class="img-thumbnail me-3">
+                    @endif
+                
 
                     @auth<a href="{{ route('seasons.index', $currentSeries->id) }}">@endauth
                             {{ $currentSeries->nome }}
