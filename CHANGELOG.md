@@ -14,12 +14,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.2.1] - 2024-09-01
+## [0.2.2] - 2024-09-03
+### Added
+
+- salvando imagens
+- removendo imagens async
+
+---
+
+## [0.2.1] - 2024-09-03
 ### Added
 
 - Logs e eventos assincronos
-
----
 
 ---
 

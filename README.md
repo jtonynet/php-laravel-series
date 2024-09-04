@@ -244,6 +244,11 @@ Cria coluna de referencia de imagem cover da serie
 php artisan make:migration --table=series add_cover_column
 ```
 
+Cria link simbolico no storage com estrategia local
+```
+php artisan storage:link
+```
+
 [Importante parte da DOC sobre queue](https://laravel.com/docs/9.x/queues#queue-workers-and-deployment)
 
 
