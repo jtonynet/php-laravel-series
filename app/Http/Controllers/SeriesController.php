@@ -44,6 +44,15 @@ class SeriesController extends BaseController
 
     public function store(SeriesFormRequest $request)
     {
+        $coverPath = $request->file('cover')
+            ->store('series_cover', 'public');
+
+        /* TODO: gamebeta pois minha  seriesRepository
+        manipula diretamente meu FormRequest e a model
+        quando deveria conhecer uma classe  de dominio
+        chamada `series`. REVER NO FUTURO*/
+        $request->coverPath = $coverPath;
+
         $series = $this->repository->add($request);
 
         \App\Events\SeriesCreated::dispatch(
@@ -60,6 +69,7 @@ class SeriesController extends BaseController
     public function destroy(Series $series)
     {
         $series->delete();
+        \App\Events\DeleteSeriesCover::dispatch($series->cover);
 
         return to_route('series.index')
             ->with('mensagem.sucesso', "Serie '{$series->nome}' removida com sucesso");

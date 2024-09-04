@@ -1,7 +1,7 @@
 <x-layout title="Nova Serie">
     <a href="{{ route('series.index') }}" class="btn btn-dark mb-2">Ver Series</a> </br>
 
-    <form action="{{ route('series.store') }}" method="post">
+    <form action="{{ route('series.store') }}" method="post" enctype="multipart/form-data">
         @csrf
 
         <div class="row mb-3">
@@ -32,6 +32,18 @@
                         name="episodesPerSeason" 
                         class="form-control" 
                         value="{{ old('episodesPerSeason') }}">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <label for="cover">
+                    <input type="file" 
+                           name="cover" 
+                           id="cover" 
+                           class="form-control"
+                           accept="image/gif, image/jpeg, image/png">
+                </label>
             </div>
         </div>
         <!-- -->

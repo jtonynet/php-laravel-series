@@ -20,8 +20,7 @@
 
 ## 🕸️ Encontre-me na Web
 
-[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jos%C3%A9-r-99896a39/) [![dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/learningenuity) [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:learningenuity@gmail.com) [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/learningenuity) [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/learningenuity) 
-
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jos%C3%A9-r-99896a39/) [![dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/learningenuity) [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:learningenuity@gmail.com) 
 ---
 
 ## 📁 O Projeto
@@ -238,6 +237,16 @@ php artisan make:event SeriesCreated
 Cria Listener vinculado ao evento
 ```
 php artisan make:listener LogSeriesCreated -e SeriesCreated
+```
+
+Cria coluna de referencia de imagem cover da serie
+```
+php artisan make:migration --table=series add_cover_column
+```
+
+Cria link simbolico no storage com estrategia local
+```
+php artisan storage:link
 ```
 
 [Importante parte da DOC sobre queue](https://laravel.com/docs/9.x/queues#queue-workers-and-deployment)
