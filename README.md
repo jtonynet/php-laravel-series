@@ -123,8 +123,11 @@ Essas melhorias não apenas otimizariam o desempenho, mas também alinhariam o p
 [⤴️ de volta ao Index](#index)
 
 <!-- 
+
+TODO: Finalidade didatica. Levar para Wiki/Confluence/Obsidian comum
+
+
 COMANDOS:
-(Levar para Wiki/Confluence/Obsidian comum)
 
 ```
 > composer create-project laravel/laravel application_download
@@ -249,10 +252,14 @@ Cria link simbolico no storage com estrategia local
 php artisan storage:link
 ```
 
+Comando para rodar os testes no laravel
+```
+php artisan test
+```
+
 [Importante parte da DOC sobre queue](https://laravel.com/docs/9.x/queues#queue-workers-and-deployment)
 
-
-
  - [Adicionar validacao assim q possivel](https://laravel.com/docs/9.x/validation#rule-confirmed)
+ - 
  - [Laravel Breeze Lesson](https://cursos.alura.com.br/course/laravel-transacoes-service-container-autenticacao/task/105915)
 -->

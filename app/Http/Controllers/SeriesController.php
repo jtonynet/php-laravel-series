@@ -46,7 +46,7 @@ class SeriesController extends BaseController
     {
         $coverPath = $request->file('cover')?->store('series_cover', 'public');
 
-        /* TODO: gamebeta pois minha  seriesRepository
+        /* TODO: alternativa pois minha  seriesRepository
         manipula diretamente meu FormRequest e a model
         quando deveria conhecer uma classe  de dominio
         chamada `series`. REVER NO FUTURO*/

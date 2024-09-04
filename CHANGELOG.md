@@ -14,6 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.3] - 2024-09-04
+### Added
+
+- Adicionando suite de testes simples
+
+---
+
 ## [0.2.2] - 2024-09-03
 ### Added
 
@@ -148,6 +155,7 @@ quantidade de episodios mas o modelo adotado nao contempla isso. Deve ser aborda
 
 - Iniciado o estudo. README, CAHNGELOG e arquivos iniciais
 
+[0.2.3]: https://github.com/jtonynet/php-laravel-series/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/jtonynet/php-laravel-series/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/jtonynet/php-laravel-series/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/jtonynet/php-laravel-series/compare/v0.1.5...v0.2.0
