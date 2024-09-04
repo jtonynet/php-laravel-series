@@ -1,10 +1,14 @@
 <x-layout title="Temporadas de '{!! $series->nome !!}'">
     
     <div class="d-flex justify-center">
+
+        @if (!is_null($series->cover))
         <img src="{{ asset('storage/' . $series->cover)}}" 
             alt="Capa da Serie"
             style="height:400px" 
             class="img-fluid">
+        @endif
+        
     </div>
     
     <ul class="list-group">
