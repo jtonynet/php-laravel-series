@@ -109,11 +109,19 @@ Contrate artistas para projetos comerciais ou mais elaborados e aprenda a ser en
 
 Durante este estudo, meu objetivo foi me atualizar nas novas versões do framework Laravel, com foco nas versões 10 e 11, onde identifiquei algumas incompatibilidades.
 
-Acredito que há espaço para melhorias futuras, as quais pretendo implementar em breve ou incentivar outros estudos:
+Acredito que há espaço para melhorias futuras, as quais pretendo implementar em breve ou incentivar outros estudos em outros repos:
 
 - Utilização do [Vite](https://vitejs.dev/) ou de uma solução melhor para dependências de front-end, em vez do depreciado `Mix`. No entanto, prefiro uma abordagem mais voltada para `APIs` que sejam consumidas por diversos clientes de front-end (React, Angular, Flutter, etc...).
 
 - Utilização do [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze) para gerenciar a autenticação de usuários, substituindo o middleware customizado utilizado nesta aplicação, o qual foi construído com propósito didático.
+
+- Aumentar sensivelmente a cobertura de testes (infelizmente TDD nao foi objetivo do curso)
+
+- CI com GithubAcations
+
+- Dockerizar no futuro
+
+- Implantar observabilidade com Grafana e Prometheus nos mesmos moldes da [go products api](https://github.com/jtonynet/go-products-api)
 
 Essas melhorias não apenas otimizariam o desempenho, mas também alinhariam o projeto com as melhores práticas recomendadas pelo Laravel.
 
