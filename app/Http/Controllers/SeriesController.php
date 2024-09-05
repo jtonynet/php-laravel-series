@@ -17,7 +17,6 @@ outra versao como BaseController. Verificar por outras  solucoes
 https://laracasts.com/discuss/channels/laravel/middleware-in-laravel-11-inside-the-controller
 */
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\Mail;
 
 class SeriesController extends BaseController
 {

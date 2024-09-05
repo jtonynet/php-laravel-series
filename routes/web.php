@@ -29,7 +29,3 @@ Route::get('/logout', [LoginController::class, 'destroy'])->name('signout');
 
 Route::get('/register', [UsersController::class, 'create'])->name('users.create');
 Route::post('/register', [UsersController::class, 'store'])->name('users.store');
-
-Route::get('/email', function () {
-    return new \App\Mail\SeriesCreated('Alf', 29, 3, 12);
-});
