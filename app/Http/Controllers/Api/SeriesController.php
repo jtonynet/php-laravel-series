@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Requests\SeriesFormRequest;
 use \App\Models\Series;
-
+use Illuminate\Http\Response;
 /*
 TODO: Broken change entre o laravel 10 e 11 a controller default
 nao possui mais o metodo 'middleware' portando  estou  usando  a 
@@ -18,5 +19,11 @@ class SeriesController extends BaseController
     public function index()
     {
         return Series::all();
+    }
+
+    public function store(SeriesFormRequest $request)
+    {
+        return response()
+            ->json(Series::create($request->all()), Response::HTTP_CREATED);
     }
 }

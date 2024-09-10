@@ -117,9 +117,11 @@ Acredito que há espaço para melhorias futuras, as quais pretendo implementar e
 
 - Aumentar sensivelmente a cobertura de testes (infelizmente TDD nao foi objetivo do curso)
 
-- CI com GithubAcations
-
 - Dockerizar no futuro
+
+-  Implantar XDebug Dockerizado
+
+- CI com GithubAcations
 
 - Implantar observabilidade com Grafana e Prometheus nos mesmos moldes da [go products api](https://github.com/jtonynet/go-products-api)
 
