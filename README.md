@@ -130,6 +130,22 @@ Essas melhorias não apenas otimizariam o desempenho, mas também alinhariam o p
 
 [⤴️ de volta ao Index](#index)
 
+---
+
+<a id="footer"></a>
+
+<br/>
+
+>  _"Lifelong Learning & Prosper"_
+> <br/> 
+>  _Mr. Spock, maybe_   🖖🏾🚀
+
+<div align="center">
+    <a href="#footer">
+        <img src="./docs/assets/images/layout/footer_learn_ingenuity_bg_hexagonal.png" />
+    </a>
+</div>
+
 <!-- 
 
 TODO: Finalidade didatica. Levar para Wiki/Confluence/Obsidian comum
