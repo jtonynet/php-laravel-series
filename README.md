@@ -49,6 +49,11 @@ Projeto para atualização de conhecimentos em novas versões do framework Larav
 
 <br/>
 
+Outros Repositórios/Cursos vinculados:
+- [`PHP Unit & Best Practices`](https://github.com/jtonynet/php-unit-tests/)
+
+<br/>
+
 [⤴️ de volta ao Index](#index)
 
 ---
