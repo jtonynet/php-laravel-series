@@ -13,8 +13,7 @@
 -->
 [<img src="./docs/assets/images/icons/php.svg" width="40px" height="40px" alt="PHP logo" title="PHP">](https://www.php.net) [<img src="./docs/assets/images/icons/composer.svg" width="35px" height="35px" alt="Composer logo" title="Composer"/>](https://getcomposer.org/) [<img src="./docs/assets/images/icons/laravel.svg" width="25px" height="25px" alt="rubygems logo" title="Laravel">](https://laravel.com/) [<img src="./docs/assets/images/icons/html5.svg" width="25px" height="25px" alt="html 5 logo" title="HTML 5">](https://dev.w3.org/html5/spec-LC/) [<img src="./docs/assets/images/icons/css3.svg" width="25px" height="25px" alt="css 3 logo" title="CSS 3">](https://www.w3.org/Style/CSS/Overview.en.html) [<img src="./docs/assets/images/icons/javascript.svg" width="25px" height="25px" alt="javascript logo" title="JavaScript">](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [<img src="./docs/assets/images/icons/bootstrap.svg" width="25px" height="25px" alt="Bootstrap logo" title="Bootstrap">](https://getbootstrap.com/)  [<img src="./docs/assets/images/icons/sqlite.svg" width="25px" height="25px" alt="SQlite" title="SQlite">](https://www.sqlite.org/index.html) [<img src="./docs/assets/images/icons/ubuntu.svg" width="25px" height="25px Logo" title="Ubunto" alt="Ubunto" />](https://ubuntu.com/) [<img src="./docs/assets/images/icons/github.svg" width="25px" height="25px" alt="GitHub Logo" title="GitHub">](https://github.com/jtonynet) [<img src="./docs/assets/images/icons/visualstudiocode.svg" width="25px" height="25px" alt="VsCode Logo" title="VsCode">](https://code.visualstudio.com/) [<img src="./docs/assets/images/icons/mailtrap.svg" width="25px" height="25px" alt="Mailtrap Logo" title="Mailtrap">](https://mailtrap.io/) 
 
-
-![Badge Status](https://img.shields.io/badge/STATUS-IN_DEVELOPMENT-green) <!--![Badge GitHubActions]()-->
+![Badge Status](https://img.shields.io/badge/STATUS-ENCERRADO-blue)
 
 ---
 
@@ -122,7 +121,7 @@ Acredito que há espaço para melhorias futuras, as quais pretendo implementar e
 
 - Aumentar sensivelmente a cobertura de testes (infelizmente TDD nao foi objetivo do curso)
 
-- CI com GithubAcations
+- CI com GithubActions
 
 - Dockerizar no futuro
 
